@@ -11,10 +11,14 @@
             "id": "07d9e0cde92d1a36",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
             }
           }
         ]
@@ -176,8 +180,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "42e3fe56a4afc1dc",
+  "active": "07d9e0cde92d1a36",
   "lastOpenFiles": [
+    "Untitled.md",
     "auie.md",
     "obsidian.vimrc"
   ]

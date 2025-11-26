@@ -1,128 +1,86 @@
-" -----------
-" Easy access
-" -----------
-nnoremap « <
-xnoremap « <gv
-nnoremap » >
-xnoremap » >gv
-
-nnoremap g, g;
-xnoremap g, g;
-nnoremap g; g,
-xnoremap g; g,
-
-nnoremap é w
-xnoremap é w
-onoremap é w
-nnoremap É W
-xnoremap É W
-onoremap É W
-
-onoremap aé aw
-xnoremap aé aw
-onoremap aÉ aW
-xnoremap aÉ aW
-onoremap ié iw
-xnoremap ié iw
-onoremap iÉ iW
-xnoremap iÉ iW
-
-" --------- 
-" Movements
-" ---------
-nnoremap c h
-xnoremap c h
-nnoremap C H
-xnoremap C H
-nnoremap t j
-xnoremap t j
-nnoremap T J
-xnoremap T J
-nnoremap s k
-xnoremap s k
-nnoremap S K
-xnoremap S K
-nnoremap r l
-xnoremap r l
-nnoremap R L
-xnoremap R L
-
-"nnoremap h t
-"xnoremap h t
-"nnoremap H T
-"xnoremap H T
-nnoremap h r
-xnoremap h r
-nnoremap H R
-xnoremap H R
-
-nnoremap l c
-xnoremap l c
-onoremap l c
-nnoremap L C
-xnoremap L C
-
-"nnoremap j r
-"xnoremap j r
-"nnoremap J R
-"xnoremap J R
-nnoremap j t
-xnoremap j t
-nnoremap J T
-xnoremap J T
-nnoremap k s
-xnoremap k s
-nnoremap K S
-xnoremap K S
-
-" ???
-nnoremap gt gj
-xnoremap gt gj
-nnoremap gs gk
-xnoremap gs gk
-
-" ???
-nnoremap zT zt
-xnoremap zT zt
-nnoremap zt zj
-xnoremap zt zj
-nnoremap zk zs
-xnoremap zk zs
-nnoremap zs zk
-xnoremap zs zk
+" {W} -> [É]
+" 
+" On remappe W sur É :
+noremap é w
+noremap É W
+" Corollaire, pour effacer/remplacer un mot quand on nest pas au début (daé / laé).
+" (attention, cela diminue la réactivité du {A})
+noremap aé aw
+noremap aÉ aW
 
 
-" Tabs (???)
-" ----------
-nnoremap gb gT
-nnoremap gé gt
-nnoremap gB :execute "silent! tabfirst"<CR>
-nnoremap gÉ :execute "silent! tablast"<CR>
-nnoremap gT <C-]>
+" set langmap=éÉ;wW,«»;<>,èÈ;^0,cCtTsSrR;hHjJkKlL,hHjJkKlL;rRtTsScC
+
+" [HJKL] -> {CTSR}
+" 
+" {cr} = « gauche / droite »
+noremap c h
+noremap r l
+" {ts} = « haut / bas »
+noremap t j
+noremap s k
+" {CR} = « haut / bas de l'écran »
+noremap C H
+noremap R L
+" {TS} = « joindre / aide »
+noremap T J
+noremap S K
+" Corollaire : repli suivant / précédent
+noremap zs zj
+noremap zt zk
+ 
+"" {HJKL} <- [CTSR]
+"" 
+"" {J} = « Jusqu'à »            (j = suivant, J = précédant)
+noremap j t
+noremap J T
+" {L} = « Change »             (l = attend un mvt, L = jusqu'à la fin de ligne)
+noremap l c
+noremap L C
+" {H} = « Remplace »           (h = un caractère slt, H = reste en « Remplace »)
+noremap h r
+noremap H R
+" {K} = « Substitue »          (k = caractère, K = ligne)
+noremap k s
+noremap K S
+" Corollaire : correction orthographique
+noremap ]k ]s
+noremap [k [s
+
+" Vim surrounds
+"noremap lk cs
+ 
+" Désambiguation de {g}
+" 
+" ligne écran précédente / suivante (à l'intérieur d'une phrase)
+"noremap gs gk
+"noremap gt gj
+"" onglet précédant / suivant
+"noremap gb gT
+"noremap gé gt
+"" optionnel : {gB} / {gÉ} pour aller au premier / dernier onglet
+"noremap gB :exe "silent! tabfirst"<CR>
+"noremap gÉ :exe "silent! tablast"<CR>
+"" optionnel : {g"} pour aller au début de la ligne écran
+"noremap g" g0
+ 
+"<> en direct
+noremap « <
+noremap » >
+ 
+" Remaper la gestion des fenêtres
+" 
+noremap wt <C-w>j
+noremap ws <C-w>k
+noremap wc <C-w>h
+noremap wr <C-w>l
+noremap wd <C-w>c
+noremap wo <C-w>s
+noremap wp <C-w>o
+noremap w<SPACE> :split<CR>
+noremap w<CR> :vsplit<CR>
 
 
-" Windows
-" -------
-nnoremap w <C-w>
-nnoremap W <C-w><C-w>
+noremap è ^
+noremap È 0
 
-nnoremap wc <C-w>h
-nnoremap wt <C-w>j
-nnoremap ws <C-w>k
-nnoremap wr <C-w>l
-nnoremap wC <C-w>H
-nnoremap wT <C-w>J
-nnoremap wS <C-w>K
-nnoremap wR <C-w>L
-
-nnoremap wh <C-w>s
-nnoremap wé <C-w>t
-nnoremap wÉ <C-w>T
-
-"noremap wo <C-w>s
-"noremap wp <C-w>o
-"noremap w<SPACE> :split<CR>
-"noremap w<CR> :vsplit<CR>
-
-"noremap è ^
-"noremap È 0
