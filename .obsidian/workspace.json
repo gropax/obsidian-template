@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3e0f07665b15af26",
+        "id": "8580a22b5725b43e",
         "type": "tabs",
         "children": [
           {
-            "id": "07d9e0cde92d1a36",
+            "id": "f72062d84a814c4b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -176,8 +176,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "42e3fe56a4afc1dc",
+  "active": "f72062d84a814c4b",
   "lastOpenFiles": [
+    "Untitled.md",
+    "assets/png/file-20251126154642514.png",
+    "assets/png",
+    "assets",
+    "Untitled 1.md",
     "auie.md",
     "auie.md",
     "obsidian.vimrc"
