@@ -1,5 +1,7 @@
 {
   "vimMode": true,
   "attachmentFolderPath": "assets",
-  "promptDelete": false
+  "promptDelete": false,
+  "useTab": false,
+  "tabSize": 4
 }
